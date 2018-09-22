@@ -131,7 +131,7 @@ function! Cream_listchars_init()
 	" eol
 	if     strlen(substitute(strtrans(nr2char(182)), ".", "x", "g")) == 1
 		" paragrah symbol (digraph PI)
-		execute "set listchars+=eol:" . nr2char(182)
+		execute "set listchars+=eol:¬"
 	else
 		" dollar sign
 		execute "set listchars+=eol:" . nr2char(36)
